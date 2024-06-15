@@ -1,11 +1,11 @@
- import bcryptjs from "bcryptjs";
+import bcryptjs from "bcryptjs";
 import User from "../models/user.model.js";
+import { errorHandler } from "../utils/error.js";
 export const test = (req, res) => {
   res.json({
-    message: "Api is working",
+    message: 'Api route is working!',
   });
 };
-
 export const updateUser = async (req, res, next) => {
   if (req.user.id !== req.params.id)
     return next(errorHandler(401, 'You can only update your own account!'));
