@@ -12,7 +12,7 @@ import {
   updateUserSuccess,
   updateUserFailure,
 } from '../redux/user/userSlice';
-import { Link } from 'react-router-dom';
+ 
 
 export default function Profile() {
   const fileRef = useRef(null);
@@ -21,9 +21,6 @@ export default function Profile() {
   const [filePerc, setFilePerc] = useState(0);
   const [fileUploadError, setFileUploadError] = useState(false);
   const [formData, setFormData] = useState({});
-  const [updateSuccess, setUpdateSuccess] = useState(false);
-  const [showListingsError, setShowListingsError] = useState(false);
-  const [userListings, setUserListings] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -88,7 +85,7 @@ export default function Profile() {
       }
 
       dispatch(updateUserSuccess(data.user));
-      setUpdateSuccess(true);
+      
     } catch (error) {
       dispatch(updateUserFailure(error.message));
     }
