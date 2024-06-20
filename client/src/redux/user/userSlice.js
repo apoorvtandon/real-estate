@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -34,7 +35,7 @@ const userSlice = createSlice({
       state.error = action.payload;
       state.loading = false;
     },
-    deleteUserStart : (state) => {
+    deleteUserStart: (state) => {
       state.loading = true;
     },
     deleteUserSuccess: (state, action) => {
@@ -46,7 +47,7 @@ const userSlice = createSlice({
       state.error = action.payload;
       state.loading = false;
     },
-    signOutUserStart : (state) => {
+    signOutUserStart: (state) => {
       state.loading = true;
     },
     signOutUserSuccess: (state, action) => {
@@ -73,6 +74,6 @@ export const {
   deleteUserFailure,
   signOutUserStart,
   signOutUserSuccess,
-  signOutUserFailure
+  signOutUserFailure,
 } = userSlice.actions;
 export default userSlice.reducer;
