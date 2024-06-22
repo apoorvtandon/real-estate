@@ -119,7 +119,7 @@ export default function Search() {
       setShowMore(false);
       
     setListings([...listings, ...data]);
-  };
+  };}
 
   return (
     <div className='flex flex-col md:flex-row md:min-h-screen'>
