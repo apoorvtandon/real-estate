@@ -11,10 +11,10 @@ export default function Footer() {
         <div className="flex flex-col items-start">
           <div className="flex items-center mb-4">
             <img src={logo} alt="Logo" className="h-20 w-20 mr-2" />
-            <span className="text-2xl font-bold text-pink-600">SAHAND ESTATES</span>
+            <span className="text-2xl font-bold text-pink-600">Urban Nest</span>
           </div>
           <p className="text-slate-700 mb-4">
-          Sahand Estate is your trusted partner in finding the perfect home. We offer<br/> a wide range of properties,from cozy apartments to luxurious villas, catering<br/> to all your real estate needs.Our team of experienced agents is dedicated to<br/> providing personalized service and expert advice to help you make informed decisions.
+          Urban Nest is your trusted partner in finding the perfect home. We offer<br/> a wide range of properties,from cozy apartments to luxurious villas, catering<br/> to all your real estate needs.Our team of experienced agents is dedicated to<br/> providing personalized service and expert advice to help you make informed decisions.
           </p>
           <div className="flex space-x-4">
             <a href="https://github.com" className="text-slate-700 hover:text-pink-600">
