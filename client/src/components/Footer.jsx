@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub , FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import logo from '../assets/logo.webp'
+import logo from '../assets/re.svg'
 import { Link } from 'react-router-dom';
 export default function Footer() {
   return (

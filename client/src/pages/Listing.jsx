@@ -51,7 +51,7 @@ export default function Listing() {
     fetchListing();
   }, [params.listingId]);
  
-
+console.log(listing);
   return (
     
     <main>
@@ -61,7 +61,7 @@ export default function Listing() {
       )}
       {listing && !loading && !error && (
         <div>
-          <Swiper navigation>
+          <Swiper style={{ maxWidth: '90%', margin: '0 auto' }} navigation>
             {listing.imageUrls.map((url) => (
               <SwiperSlide key={url}>
                 <div

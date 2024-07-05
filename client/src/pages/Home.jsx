@@ -47,7 +47,7 @@ export default function Home() {
     };
     fetchOfferListings();
   }, []);
-
+console.log(offerListings);
   return (
     
     <div>
@@ -72,7 +72,7 @@ export default function Home() {
 </div>
 <Services/>
     {/*swiper */}
-    <Swiper navigation>
+    <Swiper style={{ maxWidth: '80%', margin: '0 auto' }} navigation>
         {offerListings &&
           offerListings.length > 0 &&
           offerListings.map((listing) => (
@@ -89,7 +89,7 @@ export default function Home() {
           ))}
       </Swiper>
     
-      <div className='maw-w-6xl mx-auto p-3 flex flex-col gap-8 my-10'>
+      <div className='maw-w-6xl mx-auto p-3 flex flex-col gap-8 my-10 ml-8'>
       {offerListings && offerListings.length > 0 && (
            <div className=''>
            <div className='my-3'>
@@ -104,7 +104,7 @@ export default function Home() {
          </div>  
       )}
       {rentListings && rentListings.length > 0 && (
-          <div className=''>
+          <div className='ml-6'>
             <div className='my-3'>
               <h2 className='text-2xl font-semibold text-slate-600'>Recent places for rent</h2>
               <Link className='text-sm text-blue-800 hover:underline' to={'/search?type=rent'}>Show more places for rent</Link>
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
         )}
         {saleListings && saleListings.length > 0 && (
-          <div className=''>
+          <div className='ml-6'>
             <div className='my-3'>
               <h2 className='text-2xl font-semibold text-slate-600'>Recent places for sale</h2>
               <Link className='text-sm text-blue-800 hover:underline' to={'/search?type=sale'}>Show more places for sale</Link>
