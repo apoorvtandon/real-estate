@@ -8,7 +8,7 @@ const About = () => {
     <div className="flex flex-col lg:flex-row items-center gap-6 p-6 lg:p-28 max-w-6xl mx-auto">
       <img src={img1} alt="Hero" className="h-[600px] w-[600px] object-cover" />
       <div className="flex flex-col gap-6 text-center lg:text-left">
-        <div className="bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm w-max mx-auto lg:mx-0">
+        <div className="bg-red-100 text-red-600 px-4 py-1 rounded-full  w-max mx-auto lg:mx-0 text-xl">
           About Us
         </div>
         <h1 className="text-gray-900 font-bold text-3xl lg:text-5xl">
