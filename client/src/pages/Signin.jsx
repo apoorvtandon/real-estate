@@ -49,20 +49,20 @@ export default function SignIn() {
         <input
           type="email"
           placeholder="email"
-          className="border p-3 rounded-lg"
+          className="input py-4 px-6 rounded-xl bg-gray-200 shadow-custom-light focus:outline-none focus:shadow-custom-inset transition duration-300"
           id="email"
           onChange={handleChange}
         />
         <input
           type="password"
           placeholder="password"
-          className="border p-3 rounded-lg"
+          className="input py-4 px-6 rounded-xl bg-gray-200 shadow-custom-light focus:outline-none focus:shadow-custom-inset transition duration-300"
           id="password"
           onChange={handleChange}
         />
         <button
           disabled={loading}
-          className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity:80"
+          className="cursor-pointer bg-gradient-to-r from-[#42a4ba] to-[#337d8d] px-6 py-2 rounded text-white font-semibold shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-10px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] focus:shadow-[inset_-12px_-8px_40px_#46464620] transition-shadow disabled opacity-65"
         >
           {loading ? "Loading..." : "Sign In"}
         </button>
